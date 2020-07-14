@@ -1,12 +1,12 @@
 # code your #valid_move? method here
 
-#method accepts two arguments 
+#method accepts two arguments
 def valid_move? (board, index)
-  #if statement to see if the position is taken 
+  #if statement to see if the position is taken
   #when the position is taken, return false
   if position_taken?(board, index)
     return false
-  else
+  elsif position_taken?(board, index) != true && index.between?(0,8)
     true
   end
 end
